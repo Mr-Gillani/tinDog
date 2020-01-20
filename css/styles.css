@@ -1,6 +1,7 @@
 body {
   font-family: "Montserrat";
   text-align: center;
+  overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,7 +64,7 @@ p {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 959px) {
   .big-heading,.iphone6 {
     text-align: center;
   }
@@ -71,6 +72,9 @@ p {
   .iphone {
     transform: rotate(0);
     position: static;
+  }
+  .Navigation-Bar{
+    width: 100%;
   }
 }
 
@@ -87,8 +91,8 @@ p {
 .features-text{
   font-size: 2rem;
 }
-.features-main {
-  margin: 0 100px;
+#features {
+  margin: 0 3%;
   padding: 10% 0;
   background-color: white;
   position: relative;
@@ -100,6 +104,7 @@ p {
   font-family: "Ubuntu";
   font-weight: lighter;
   line-height: 1.5;
+  width: 100%;
 }
 
 /* testimonial */
@@ -123,6 +128,13 @@ p {
   margin: 50px;
 }
 
+@media (max-width : 959px;){
+  #testimonials{
+    width: 100%;
+  }
+
+}
+
 /* press */
 #press {
   background-color: #ef8172;
@@ -132,6 +144,12 @@ p {
 .press-logos {
   width: 17%;
   margin: 20px;
+}
+@media (max-width : 959px;){
+  #press{
+    width: 100%;
+  }
+
 }
 
 /* pricing */
@@ -175,6 +193,12 @@ p {
   font-weight: bold;
 }
 
+@media (max-width : 959px;){
+  #cta{
+    width: 100%;
+  }
+
+}
 /* footer */
 #footer {
   font-size: .7rem;
