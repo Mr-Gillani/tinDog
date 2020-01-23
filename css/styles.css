@@ -1,7 +1,5 @@
 body {
-  font-family: "Montserrat";
-  text-align: center;
-  overflow: hidden;
+  font-family: "Montserrat-Black"sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,6 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   color: #8f8f8f;
 }
+
 
 /* navbar section */
 .navbar {
@@ -49,7 +48,6 @@ p {
 .big-heading {
   font-size: 3.5rem;
   font-style: oblique;
-  text-align: left;
 }
 
 .download-btn {
@@ -63,22 +61,30 @@ p {
   right: 30%;
 }
 
-
 @media (max-width: 959px) {
-  .big-heading,.iphone6 {
+  .intro, .iphone,.big-heading {
     text-align: center;
   }
 
   .iphone {
     transform: rotate(0);
     position: static;
-  }
-  .Navigation-Bar{
-    width: 100%;
+    margin-left:20%;
   }
 }
 
 /* features */
+
+#features {
+  text-align: center;
+  background-color: white;
+  position: relative;
+  left: 5%;
+  padding: 7% 3%;
+  z-index: 1;
+  float: center;
+}
+
 .features-icons {
   color: #ef8172;
   font-size: 3rem;
@@ -91,26 +97,23 @@ p {
 .features-text{
   font-size: 2rem;
 }
-#features {
-  margin: 0 3%;
-  padding: 10% 0;
-  background-color: white;
-  position: relative;
-  z-index: 1;
-  ;
-}
 
 .features-p {
   font-family: "Ubuntu";
   font-weight: lighter;
   line-height: 1.5;
-  width: 100%;
+}
+@media (max-width : 959px) {
+  .features-text{
+    font-size: 1.5rem;
+  }
 }
 
 /* testimonial */
 #testimonials{
   background-color: #ef8172;
   color: #fff;
+  text-align: center;
 }
 
 .testimonial-img {
@@ -128,16 +131,10 @@ p {
   margin: 50px;
 }
 
-@media (max-width : 959px;){
-  #testimonials{
-    width: 100%;
-  }
-
-}
-
 /* press */
 #press {
   background-color: #ef8172;
+  text-align: center;
   padding: 5%;
 }
 
@@ -145,16 +142,11 @@ p {
   width: 17%;
   margin: 20px;
 }
-@media (max-width : 959px;){
-  #press{
-    width: 100%;
-  }
-
-}
 
 /* pricing */
 #pricing {
   padding: 3%;
+  text-align: center;
 }
 
 .dog-name{
@@ -185,6 +177,7 @@ p {
 
 /* cta-section */
 #cta {
+  text-align: center;
   background-color: #ff2d4e;
   padding: 5% 15%;
   color: #fff;
@@ -193,14 +186,9 @@ p {
   font-weight: bold;
 }
 
-@media (max-width : 959px;){
-  #cta{
-    width: 100%;
-  }
-
-}
 /* footer */
 #footer {
+  text-align: center;
   font-size: .7rem;
   padding: 20px 0;
 }
